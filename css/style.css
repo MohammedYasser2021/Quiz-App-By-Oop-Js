@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+.settings{
+    width: 900px;
+    margin: 20px auto;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px
+}
+.settings h2{
+    margin: 10px auto;
+    padding: 10px;
+    background-color: darkblue;
+    width: 25%;
+    color: #fff;
+    text-align: center;
+}
+.settings h2 + label{
+    padding: 10px
+}
+.settings h2 + label + select{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.settings div:nth-of-type(1) {
+    margin: 10px;
+    padding: 10px;
+    background-color: darkcyan;
+    color: #fff
+}
+.settings div:nth-of-type(1) label:not(:first-child){
+    display: block;
+    line-height: 2;
+}
+.settings div:nth-of-type(2){
+    background-color:royalblue;
+    margin:10px;
+    padding: 10px;
+    color: #fff
+}
+.settings div:nth-of-type(2) input{
+    margin: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    outline: none;
+    border: none
+}
+.settings .start{
+    padding: 10px;
+    width: 180px;
+    display: block;
+    margin: 10px auto 0;
+    background-color:midnightblue;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.hint{
+    color: red;
+    margin-left: 10px;
+    display: none;
+}
+
+.quiz{
+    display: none;
+    width: 700px;
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 10px
+
+}
+.quiz .count{
+    background-color: crimson;
+    color: #fff;
+    width: fit-content;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.quiz p {
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.quiz .current{
+    color: #222
+}
+.quiz #questions{
+    margin-bottom: 10px;
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px
+}
+.quiz .answer{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.quiz #next{
+    padding: 10px;
+    width: 180px;
+    display: block;
+    margin: 10px auto 0;
+    background-color:midnightblue;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.final{
+    display: none;
+    width: 700px;
+    margin: 100px auto;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    padding: 10px
+}
+.final .score{
+    color: green
+}
+.final #again{
+    width: 180px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background-color:midnightblue;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+}

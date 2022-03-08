@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="final">
+        <h2>You Answered All Questions</h2>
+        <p class="score"></p>
+        <h4>Try Again</h4>
+        <button id="again">Try Again</button>
+    </div>
+    <div class="quiz">
+        <div class="count">
+            <p class="current">1</p>
+            <p class=>/</p>
+            <p class="total"></p>
+        </div>
+        <h3 id ="questions"></h3>
+        <label id="a1" class="answer"></label>
+        <label id="a2" class="answer"></label>
+        <label id="a3" class="answer"></label>
+        <label id="a4" class="answer"></label>
+        <button id="next">Next</button>
+    </div>
+    <div class="settings">
+        <h2>Quiz Settings</h2>
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+            <option value="" hidden>Select Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+        </select>
+        <div>
+            <label for="difficulty">Difficulty</label>
+            <label for="easy">
+                <input type="radio" id="easy">
+                Easy
+            </label>
+            <label for="medium">
+                <input type="radio" id="medium">
+                Medium
+            </label>
+            <label for="hard">
+                <input type="radio" id="hard">
+                Hard
+            </label>
+        </div>
+        <div>
+            <label for="nQuestions">
+                <input type="number" name="" id="nQuestions">
+                Number Of Questions
+            </label>
+        </div>
+        <span class="hint"></span>
+        <button id="start" class="start">Start</button>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
